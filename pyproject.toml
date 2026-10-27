@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automated-code-reviewer-agent"
+version = "0.1.0"
+description = "A basic, tool-using code-review agent with Gemini"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=1.0.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.2.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
